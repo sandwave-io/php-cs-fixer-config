@@ -96,7 +96,7 @@ class Config extends BaseConfig
         ], $this->overrides);
 
         // Order the rule sets: @PSR1, @PSR2, @PSR12 (instead of @PSR1, @PSR12, @PSR2)
-        uksort($rules, "strnatcmp");
+        uksort($rules, 'strnatcmp');
 
         return $rules;
     }
